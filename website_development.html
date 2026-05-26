@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development - Fast, Conversion-Focused Web Apps | Crystal Tech</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+        <!-- Phase 4: SEO meta -->
+    <meta name="description" content="Website and web app development. React, Next.js, Node.js, custom CMS, SaaS platforms. 90+ Lighthouse score on every build. Starting at $899.">
+    <meta name="keywords" content="website development, web app development, react developer, next.js developer, custom CMS, SaaS development">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Crystal Tech">
+    <meta name="theme-color" content="#f59e0b">
+    <link rel="canonical" href="https://crystaltechnologys.com/website_development.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Crystal Tech">
+    <meta property="og:title" content="Website Development - Fast, Conversion-Focused Web Apps | Crystal Tech">
+    <meta property="og:description" content="Website and web app development. React, Next.js, Node.js, custom CMS, SaaS platforms. 90+ Lighthouse score on every build. Starting at $899.">
+    <meta property="og:url" content="https://crystaltechnologys.com/website_development.html">
+    <meta property="og:image" content="https://crystaltechnologys.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Website Development - Fast, Conversion-Focused Web Apps | Crystal Tech">
+    <meta name="twitter:description" content="Website and web app development. React, Next.js, Node.js, custom CMS, SaaS platforms. 90+ Lighthouse score on every build. Starting at $899.">
+    <meta name="twitter:image" content="https://crystaltechnologys.com/assets/og-image.png">
+
+    <!-- Web manifest + extra icons -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+</head>
+
+<body>
+    <!-- Splash screen (Phase 3) -->
+    <div id="crystal-splash" class="crystal-splash" aria-hidden="true">
+        <div class="splash-logo-wrap">
+            <img src="assets/logo.png" alt="" class="splash-logo">
+            <div class="splash-ring"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Crystal Tech Logo" class="logo-img" id="logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html#services" class="active-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="app_development.html">App Development</a></li>
+                        <li><a href="blockchain_development.html">Blockchain Development</a></li>
+                        <li><a href="website_development.html">Website Development</a></li>
+                        <li><a href="game_development.html">Game Development</a></li>
+                        <li><a href="bot_development.html">Bot Development</a></li>
+                        <li><a href="call_system_setup.html">Call system setup</a></li>
+                        <li><a href="decompile_decryption.html">Decompile and decryption</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="technologies.html">Technology <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="technologies.html#dotnet">.NET</a></li>
+                        <li><a href="technologies.html#java">Java</a></li>
+                        <li><a href="technologies.html#python">Python</a></li>
+                        <li><a href="technologies.html#php">PHP</a></li>
+                        <li><a href="technologies.html#golang">Golang</a></li>
+                        <li><a href="technologies.html#cpp">C++</a></li>
+                        <li><a href="technologies.html#nodejs">Node.js</a></li>
+                        <li><a href="technologies.html#javascript">Javascript</a></li>
+                        <li><a href="technologies.html#react-native">React Native</a></li>
+                        <li><a href="technologies.html#mobile">Mobile</a></li>
+                        <li><a href="technologies.html#cloud">Cloud</a></li>
+                        <li><a href="technologies.html#saas">Software as a Service (SaaS)</a></li>
+                        <li><a href="technologies.html#iot">Internet of Things</a></li>
+                        <li><a href="technologies.html#big-data">Big Data</a></li>
+                        <li><a href="technologies.html#data-science">Data Science</a></li>
+                        <li><a href="technologies.html#machine-learning">Machine Learning</a></li>
+                        <li><a href="technologies.html#ai">Artificial Intelligence</a></li>
+                        <li><a href="technologies.html#blockchain">Blockchain</a></li>
+                        <li><a href="technologies.html#vr">Virtual Reality</a></li>
+                        <li><a href="technologies.html#ar">Augmented Reality</a></li>
+                        <li><a href="technologies.html#computer-vision">Computer Vision</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Website Development Content -->
+    <section class="app-dev-page">
+        <!-- Reuse curved background -->
+        <div class="curve-bg"></div>
+
+        <div class="container">
+            <!-- Header -->
+            <div class="app-header text-center">
+                <h1 class="page-title">Website Development</h1>
+                <span class="service-tag">Service Details</span>
+            </div>
+
+            <!-- Hero Illustration -->
+            <div class="app-hero-illustration">
+                <div class="bulb-graphic">
+                    <i class="fas fa-lightbulb main-bulb"></i>
+                    <i class="fas fa-cog gear-1"></i>
+                    <!-- Replaced gear-2 with laptop layout icon for variety -->
+                    <i class="fas fa-laptop-code gear-2"
+                        style="font-size: 3.5rem; bottom: 30px; left: -10px; color: #6366f1;"></i>
+                    <i class="fas fa-globe code-icon" style="color: #10b981;"></i>
+                </div>
+            </div>
+
+            <!-- Main Text Content -->
+            <div class="app-main-text">
+                <p>Our team of talented web developers and designers are dedicated to creating fast, user-friendly, and
+                    responsive websites that leave a lasting impression on your visitors.</p>
+
+                <p>Whether you're a startup looking for an impressive online presence or an established business aiming
+                    to revamp your website, we've got you covered. Our services encompass everything from
+                    conceptualization and design to development and deployment, ensuring a seamless and hassle-free
+                    experience.</p>
+
+                <p>With a keen eye for detail and a deep understanding of the latest trends and technologies, we deliver
+                    websites that not only look outstanding but also function flawlessly across all devices and
+                    platforms. We take pride in our ability to optimize website performance, ensuring your website loads
+                    quickly and drives maximum engagement.</p>
+
+                <p>At Crystal Technology, client satisfaction is our top priority. We work closely with you throughout
+                    the development process, listening to your ideas and incorporating them into the final product. Our
+                    goal is to help you leverage the power of digital landscape by providing a website that not only
+                    captivates your audience but also drives conversions and generates tangible results.</p>
+
+                <p>Embrace the future of web development with "Crystal Technology" – let's collaborate on your online
+                    success together! Contact us today to discuss your website development needs and embark on a journey
+                    to achieve unparalleled excellence in the digital world.</p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <!-- Custom Website Design -->
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Custom Website Design</h3>
+                    <p>We will create a unique, and visually captivating website design tailored to your brand identity
+                        and business goals.</p>
+                </div>
+
+                <!-- Responsive Development -->
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-cubes"></i></div>
+                    <h3>Responsive Development</h3>
+                    <p>Your website will be fully responsive, adapting flawlessly to various devices, including
+                        desktops, tablets, and smartphones.</p>
+                </div>
+
+                <!-- Fast Loading Speed -->
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Fast Loading Speed</h3>
+                    <p>We prioritize performance optimization to ensure that your website loads lightning fast.</p>
+                </div>
+
+                <!-- SEO Integration -->
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-building"></i></div>
+                    <h3>SEO Integration</h3>
+                    <p>Our team will implement essential Search Engine Optimization (SEO) elements during development.
+                    </p>
+                </div>
+
+                <!-- CMS -->
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-edit"></i></div>
+                    <h3>Content Management System (CMS)</h3>
+                    <p>We will integrate a user-friendly CMS into your website, empowering you to manage and update your
+                        content easily without any technical knowledge.</p>
+                </div>
+
+                <!-- E-commerce -->
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>E-commerce Functionality (if applicable)</h3>
+                    <p>For businesses looking to sell products or services online, we offer seamless e-commerce
+                        integration with secure payment gateways and inventory management.</p>
+                </div>
+
+                <!-- Security -->
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Security and Maintenance</h3>
+                    <p>Your website's security is paramount to us. We implement robust security measures to safeguard
+                        against potential threats to keep your site running smoothly.</p>
+                </div>
+
+                <!-- Analytics -->
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Analytics and Reporting</h3>
+                    <p>Gain valuable insights into your website's performance with integrated analytics tools. We will
+                        set up tracking and reporting systems.</p>
+                </div>
+
+                <!-- Support -->
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Support and Training</h3>
+                    <p>Our support team will be available to assist you with any queries or technical issues. We also
+                        offer training sessions to help you become familiar with managing your new website.</p>
+                </div>
+
+                <!-- SEO again? No, let's add one more to balance if needed, but 9 is good (3x3 grid) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Promo / Gallery Section -->
+
+    <!-- Phase 2: Process Timeline -->
+    <section class="svc-process">
+        <div class="container">
+            <div class="section-header text-center">
+                <p class="section-tagline text-gold">How We Work</p>
+                <h2 class="section-title">A Predictable, <span class="text-gold">Demo-Driven</span> Process</h2>
+                <p class="section-desc">No black-box phases. You see real progress every week.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-num">01</div>
+                    <div class="process-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Discover</h3>
+                    <p>Free 30-min call. We map your goals, users and constraints, then send a written scope and fixed quote.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-num">02</div>
+                    <div class="process-icon"><i class="fas fa-pen-ruler"></i></div>
+                    <h3>Design</h3>
+                    <p>Figma mockups for every screen. You approve before any production code is written.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-num">03</div>
+                    <div class="process-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>Build</h3>
+                    <p>Weekly demos in a staging environment. Clean Git history. You own the code from commit one.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-num">04</div>
+                    <div class="process-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Launch</h3>
+                    <p>Production deploy, monitoring set up, 30 days of post-launch support included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase 2: Pricing Tiers -->
+    <section class="svc-pricing">
+        <div class="container">
+            <div class="section-header text-center">
+                <p class="section-tagline text-gold">Pricing</p>
+                <h2 class="section-title">Pick a Tier, <span class="text-gold">Get a Quote</span></h2>
+                <p class="section-desc">Fast, conversion-focused sites and web apps - launched in weeks.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-tier">
+                    
+                    <div class="tier-name">Starter</div>
+                    <div class="tier-price"><span class="tier-price-from">starting at</span><span class="tier-price-amount">$899</span></div>
+                    <div class="tier-sub">Marketing site</div>
+                    <ul class="tier-features">
+                            <li><i class="fas fa-check"></i>Up to 6 pages</li>
+                            <li><i class="fas fa-check"></i>Mobile-first design</li>
+                            <li><i class="fas fa-check"></i>Contact form + analytics</li>
+                            <li><i class="fas fa-check"></i>Basic SEO</li>
+                            <li><i class="fas fa-check"></i>1-2 weeks delivery</li>
+                    </ul>
+                    <a href="contact.html" class="tier-cta">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="pricing-tier featured">
+                    <div class="tier-badge">Most Popular</div>
+                    <div class="tier-name">Growth</div>
+                    <div class="tier-price"><span class="tier-price-from">starting at</span><span class="tier-price-amount">$3,499</span></div>
+                    <div class="tier-sub">CMS or storefront</div>
+                    <ul class="tier-features">
+                            <li><i class="fas fa-check"></i>Up to 15 pages</li>
+                            <li><i class="fas fa-check"></i>Custom CMS (Strapi / WordPress)</li>
+                            <li><i class="fas fa-check"></i>Payments / Stripe checkout</li>
+                            <li><i class="fas fa-check"></i>Blog &amp; email capture</li>
+                            <li><i class="fas fa-check"></i>Performance budget (90+ Lighthouse)</li>
+                            <li><i class="fas fa-check"></i>3-4 weeks delivery</li>
+                    </ul>
+                    <a href="contact.html" class="tier-cta">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="pricing-tier">
+                    
+                    <div class="tier-name">Enterprise</div>
+                    <div class="tier-price"><span class="tier-price-amount">Custom</span></div>
+                    <div class="tier-sub">Web platform / SaaS</div>
+                    <ul class="tier-features">
+                            <li><i class="fas fa-check"></i>Auth, dashboards, billing</li>
+                            <li><i class="fas fa-check"></i>Multi-tenant architecture</li>
+                            <li><i class="fas fa-check"></i>Custom API + admin panel</li>
+                            <li><i class="fas fa-check"></i>Headless + Next.js</li>
+                            <li><i class="fas fa-check"></i>Dedicated DevOps setup</li>
+                    </ul>
+                    <a href="contact.html" class="tier-cta">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <p class="pricing-note">All projects include 30 days of post-launch support. Quotes are fixed after the discovery call - no surprise invoices.</p>
+        </div>
+    </section>
+
+    <!-- Phase 2: FAQ Accordion -->
+    <section class="svc-faq">
+        <div class="container">
+            <div class="section-header text-center">
+                <p class="section-tagline text-gold">FAQ</p>
+                <h2 class="section-title">Common <span class="text-gold">Questions</span></h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-q">How fast will my site load?<i class="fas fa-chevron-down"></i></summary>
+                    <div class="faq-a">We target a 90+ Lighthouse score on every build - typically &lt; 2s First Contentful Paint on 4G. Images are responsive, JS is code-split, and we run a perf check before handoff.</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">Do you use WordPress or custom?<i class="fas fa-chevron-down"></i></summary>
+                    <div class="faq-a">Depends on you. WordPress / Strapi for content-heavy marketing sites you want to edit yourself. Next.js / React for web apps and storefronts where you need control and speed.</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">Can you redesign my existing site?<i class="fas fa-chevron-down"></i></summary>
+                    <div class="faq-a">Yes - we can rebuild a tired site without losing SEO. We map URLs, set up 301 redirects, preserve content structure and improve Core Web Vitals.</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">Is hosting included?<i class="fas fa-chevron-down"></i></summary>
+                    <div class="faq-a">Setup is - we deploy to Vercel / Netlify / your AWS / your CMS. You own the accounts. Ongoing hosting is paid directly to the provider, usually $0-20/month for a marketing site.</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">Do I get analytics?<i class="fas fa-chevron-down"></i></summary>
+                    <div class="faq-a">Yes - Google Analytics, Plausible or PostHog set up before launch, with the key events you care about already tracked.</div>
+                </details>
+            </div>
+            <div class="faq-cta">
+                <p>Still have questions?</p>
+                <a href="contact.html" class="btn btn-primary">Ask Us Anything</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-promo-bottom">
+        <div class="promo-bg-layer"></div>
+        <div class="container text-center">
+            <span class="promo-tag">Website Development Services</span>
+            <h2 class="promo-title">Accelerate Your <span class="text-gold">Online Success</span><br>with Crystal
+                Technology Company</h2>
+
+            <div class="promo-showcase">
+                <!-- Project 1: Hop Bet -->
+                <div class="web-promo-card">
+                    <img src="assets/website-project1.jpg" alt="Hop Bet Casino" loading="lazy" decoding="async">
+                    <div class="promo-label">Hop Bet</div>
+                    <div class="hover-overlay right-content">
+                        <h3>Hop Bet</h3>
+                        <p class="hover-desc">Discover endless excitement with our streamlined betting platform. Enjoy
+                            secure, user-friendly access to your favorite sports and events with competitive odds and
+                            fast payouts.</p>
+                        <a href="https://www.awesomescreenshot.com/video/32488496?key=1885bb8d1cefd436e852d3bf2075a2a8"
+                            class="live-btn" target="_blank">Live Preview <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Mega casino world -->
+                <div class="web-promo-card">
+                    <img src="assets/website-project2.jpg" alt="Mega Casino World" loading="lazy" decoding="async">
+                    <div class="promo-label">Mega casino world</div>
+                    <div class="hover-overlay right-content">
+                        <h3>Mega casino world</h3>
+                        <p class="hover-desc">Experience the ultimate thrill at our casino & sportsbook—where every
+                            moment brings excitement, big wins, and non-stop action. Enjoy a curated casino experience,
+                            competitive odds, and in-play betting, all in one trusted platform.</p>
+                        <a href="https://mcw19.com/" class="live-btn" target="_blank">Live Preview <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Coin casino -->
+                <div class="web-promo-card">
+                    <img src="assets/website-project3.jpg" alt="Coin Casino" loading="lazy" decoding="async">
+                    <div class="promo-label">Coin casino 🎰</div>
+                    <div class="hover-overlay right-content">
+                        <h3>Coin casino 🎰</h3>
+                        <p class="hover-desc">Experience unmatched thrills at our casino and sportsbook—where
+                            electrifying wins, fast payouts, and premium betting combine for the ultimate gaming
+                            adventure.</p>
+                        <a href="https://www.coincasino.com/en" class="live-btn" target="_blank">Live Preview <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand column -->
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/logo.png" alt="Crystal Tech" class="footer-logo-img">
+                    </a>
+                    <p class="footer-tagline">A focused engineering studio building apps, blockchain, websites, games and bots that real businesses depend on.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/crystaltech777?igsh=ejUzYzQ1YW9md3Np" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@crystal_tech100?_t=ZM-8vMTZFrkdfy&amp;_r=1" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://x.com/Crystaltechnol" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+                        <a href="http://t.me/Crystal_tech01" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/16303868098" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:technologycrystals6@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services column -->
+                <div class="footer-col">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="app_development.html">App Development</a></li>
+                        <li><a href="blockchain_development.html">Blockchain Development</a></li>
+                        <li><a href="website_development.html">Website Development</a></li>
+                        <li><a href="game_development.html">Game Development</a></li>
+                        <li><a href="bot_development.html">Bot Development</a></li>
+                        <li><a href="call_system_setup.html">Call System Setup</a></li>
+                        <li><a href="decompile_decryption.html">Decompile &amp; Decryption</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company column -->
+                <div class="footer-col">
+                    <h5 class="footer-heading">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="technologies.html">Technologies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="refund_policy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Get in Touch column -->
+                <div class="footer-col">
+                    <h5 class="footer-heading">Get in Touch</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i><a href="mailto:technologycrystals6@gmail.com">technologycrystals6@gmail.com</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:crystaltech@crystaltechnologys.com">crystaltech@crystaltechnologys.com</a></li>
+                        <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/16303868098" target="_blank" rel="noopener">+1 630 386 8098</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i>San Francisco, USA<br><span class="footer-branch">Branch: Santiago de Compostela, Spain</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Crystal Tech. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="refund_policy.html">Refund Policy</a>
+                    <span>&middot;</span>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/16303868098" class="whatsapp-float" target="_blank" aria-label="WhatsApp Support">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">how can i help you</span>
+    </a>
+
+    <script src="js/request-project.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+    <!-- Phase 2: Sticky Bottom CTA -->
+    <div class="sticky-cta" id="sticky-cta">
+        <div class="sticky-cta-inner container">
+            <div class="sticky-cta-text">
+                <strong>Ready to start your website development project?</strong>
+                <span>Free 30-minute discovery call, no obligation.</span>
+            </div>
+            <div class="sticky-cta-actions">
+                <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+                <button type="button" class="sticky-cta-close" aria-label="Dismiss">&times;</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

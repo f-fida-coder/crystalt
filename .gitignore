@@ -1,0 +1,22 @@
+# Node / Vite
+node_modules/
+frontend/dist/
+.vite/
+
+# PHP — real config on the production server is never committed
+backend/config/config.php
+backend/storage/
+backend/vendor/
+
+# Deploy artifacts
+deploy/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log

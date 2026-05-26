@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy - Crystal Tech</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+        <!-- Phase 4: SEO meta -->
+    <meta name="description" content="Crystal Tech refund policy. Clear terms for project cancellations, milestone refunds and dispute resolution.">
+    <meta name="keywords" content="refund policy, crystal tech terms">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Crystal Tech">
+    <meta name="theme-color" content="#f59e0b">
+    <link rel="canonical" href="https://crystaltechnologys.com/refund_policy.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Crystal Tech">
+    <meta property="og:title" content="Refund Policy - Crystal Tech">
+    <meta property="og:description" content="Crystal Tech refund policy. Clear terms for project cancellations, milestone refunds and dispute resolution.">
+    <meta property="og:url" content="https://crystaltechnologys.com/refund_policy.html">
+    <meta property="og:image" content="https://crystaltechnologys.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Refund Policy - Crystal Tech">
+    <meta name="twitter:description" content="Crystal Tech refund policy. Clear terms for project cancellations, milestone refunds and dispute resolution.">
+    <meta name="twitter:image" content="https://crystaltechnologys.com/assets/og-image.png">
+
+    <!-- Web manifest + extra icons -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+
+    <style>
+        /* ── Refund Policy Page Styles ── */
+        .refund-hero {
+            background: linear-gradient(135deg, #0a0a1a 0%, #111827 60%, #1a1a2e 100%);
+            padding: 160px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .refund-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(212,175,55,0.12) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .refund-hero h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 16px;
+            position: relative;
+        }
+        .refund-hero h1 span {
+            color: #f59e0b;
+        }
+        .refund-hero p {
+            color: #9ca3af;
+            font-size: 1.05rem;
+            max-width: 560px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Policy Content */
+        .policy-content {
+            padding: 72px 0 90px;
+            background: #f8f9fb;
+        }
+        .policy-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.07);
+            padding: 52px 56px;
+            max-width: 880px;
+            margin: 0 auto;
+        }
+        @media (max-width: 640px) {
+            .policy-card { padding: 32px 20px; }
+        }
+
+        .policy-intro {
+            color: #4b5563;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            border-left: 4px solid #f59e0b;
+            padding-left: 18px;
+            background: #fffbea;
+            border-radius: 0 10px 10px 0;
+            padding: 18px 20px 18px 20px;
+        }
+
+        .policy-section {
+            margin-bottom: 42px;
+        }
+        .policy-section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #f3f4f6;
+        }
+        .policy-section-title .section-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0.95rem;
+            flex-shrink: 0;
+        }
+        .policy-section p {
+            color: #4b5563;
+            line-height: 1.8;
+            margin-bottom: 10px;
+            font-size: 0.97rem;
+        }
+        .policy-list {
+            list-style: none;
+            padding: 0;
+            margin: 14px 0 0;
+        }
+        .policy-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: #4b5563;
+            font-size: 0.97rem;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        .policy-list li::before {
+            content: '✕';
+            color: #ef4444;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        /* NOTE Banner */
+        .policy-note {
+            background: linear-gradient(135deg, #111827, #1e293b);
+            border-left: 5px solid #f59e0b;
+            border-radius: 12px;
+            padding: 22px 26px;
+            margin-top: 44px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        .policy-note i {
+            color: #f59e0b;
+            font-size: 1.5rem;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+        .policy-note p {
+            color: #e5e7eb;
+            line-height: 1.7;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        .policy-note strong {
+            color: #f59e0b;
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Back button */
+        .back-btn-wrap {
+            text-align: center;
+            margin-top: 48px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 18px rgba(212,175,55,0.3);
+        }
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(212,175,55,0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Splash screen (Phase 3) -->
+    <div id="crystal-splash" class="crystal-splash" aria-hidden="true">
+        <div class="splash-logo-wrap">
+            <img src="assets/logo.png" alt="" class="splash-logo">
+            <div class="splash-ring"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Crystal Tech Logo" class="logo-img" id="logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html#services">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="app_development.html">App Development</a></li>
+                        <li><a href="blockchain_development.html">Blockchain Development</a></li>
+                        <li><a href="website_development.html">Website Development</a></li>
+                        <li><a href="game_development.html">Game Development</a></li>
+                        <li><a href="bot_development.html">Bot Development</a></li>
+                        <li><a href="call_system_setup.html">Call system setup</a></li>
+                        <li><a href="decompile_decryption.html">Decompile and decryption</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="technologies.html">Technology <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="technologies.html#dotnet">.NET</a></li>
+                        <li><a href="technologies.html#java">Java</a></li>
+                        <li><a href="technologies.html#python">Python</a></li>
+                        <li><a href="technologies.html#php">PHP</a></li>
+                        <li><a href="technologies.html#golang">Golang</a></li>
+                        <li><a href="technologies.html#cpp">C++</a></li>
+                        <li><a href="technologies.html#nodejs">Node.js</a></li>
+                        <li><a href="technologies.html#javascript">Javascript</a></li>
+                        <li><a href="technologies.html#react-native">React Native</a></li>
+                        <li><a href="technologies.html#mobile">Mobile</a></li>
+                        <li><a href="technologies.html#cloud">Cloud</a></li>
+                        <li><a href="technologies.html#saas">Software as a Service (SaaS)</a></li>
+                        <li><a href="technologies.html#iot">Internet of Things</a></li>
+                        <li><a href="technologies.html#big-data">Big Data</a></li>
+                        <li><a href="technologies.html#data-science">Data Science</a></li>
+                        <li><a href="technologies.html#machine-learning">Machine Learning</a></li>
+                        <li><a href="technologies.html#ai">Artificial Intelligence</a></li>
+                        <li><a href="technologies.html#blockchain">Blockchain</a></li>
+                        <li><a href="technologies.html#vr">Virtual Reality</a></li>
+                        <li><a href="technologies.html#ar">Augmented Reality</a></li>
+                        <li><a href="technologies.html#computer-vision">Computer Vision</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="refund-hero">
+        <div class="container">
+            <h1>Refund &amp; <span>Cancellation</span> Policy</h1>
+            <p>Customer satisfaction is our primary concern. Learn about our refund, cancellation, and replacement policies.</p>
+        </div>
+    </section>
+
+    <!-- Policy Content -->
+    <section class="policy-content">
+        <div class="container">
+            <div class="policy-card">
+
+                <!-- Intro -->
+                <div class="policy-intro">
+                    Customer satisfaction is our primary concern. In the event you are displeased with the product you purchased from Crystal Technology Company, a refund will be given, provided the reasons are genuine. Please read the fine print of each deal before buying — it provides all the details about the services or product you purchase.
+                    <br><br>
+                    Crystal Technology's refund and cancellation policy gives you an option to refund or cancel items purchased for any reason within the specified cancellation period.
+                    <br><br>
+                    In case of dissatisfaction from our services, clients have the right to cancel their order and request a refund from us.
+                </div>
+
+                <!-- Cancellation Policy -->
+                <div class="policy-section">
+                    <h2 class="policy-section-title">
+                        <span class="section-icon"><i class="fas fa-times-circle"></i></span>
+                        Cancellation Policy
+                    </h2>
+                    <p>For cancellations, please contact us via the <a href="contact.html" style="color:#f59e0b;font-weight:600;">Contact Us</a> link.</p>
+                    <p>Requests received later than <strong>1 business day</strong> prior to the end of the current service period will be treated as cancellation of services for the next service period.</p>
+                </div>
+
+                <!-- Refund Policy -->
+                <div class="policy-section">
+                    <h2 class="policy-section-title">
+                        <span class="section-icon"><i class="fas fa-undo-alt"></i></span>
+                        Refund Policy
+                    </h2>
+                    <p>Crystal Technology makes the best possible efforts to provide quality products and services. All products undergo quality checks and required tests to ensure efficiency, electrical safety &amp; reliability.</p>
+                    <p>In case any client is not completely satisfied with our products, we can provide a refund.</p>
+                    <p>Refunds will be processed within <strong>2 to 5 working days</strong>, and the credited amount will be received based on your card issuer's policies.</p>
+                    <p>Refunds will be issued to the <strong>same payment method</strong> which was used at the time of purchase.</p>
+                </div>
+
+                <!-- Returns not accepted -->
+                <div class="policy-section">
+                    <h2 class="policy-section-title">
+                        <span class="section-icon"><i class="fas fa-ban"></i></span>
+                        Returns Will Not Be Accepted If
+                    </h2>
+                    <ul class="policy-list">
+                        <li>The materials have been opened/used, either fully or partially.</li>
+                        <li>The materials have been tampered with after delivery. This includes faulty storage.</li>
+                        <li>Partial returns will not be accepted.</li>
+                    </ul>
+                </div>
+
+                <!-- Replacement Policy -->
+                <div class="policy-section">
+                    <h2 class="policy-section-title">
+                        <span class="section-icon"><i class="fas fa-exchange-alt"></i></span>
+                        Replacement Policy
+                    </h2>
+                    <p>If the item you ordered arrived in physically damaged or defective condition, is different from the description on the product detail page, or has missing parts or accessories, it will be eligible for a <strong>free replacement</strong>.</p>
+                </div>
+
+                <!-- Important Note -->
+                <div class="policy-note">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>
+                        <strong>⚠️ Important Notice</strong>
+                        This policy applies <em>only</em> to those who purchase products through an official agreement file signed with Crystal Technology Company — <strong>not</strong> to clients who have contracted privately with our individual developers. Thank you for your understanding.
+                    </p>
+                </div>
+
+                <!-- Back button -->
+                <div class="back-btn-wrap">
+                    <a href="index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Back to Home
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand column -->
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/logo.png" alt="Crystal Tech" class="footer-logo-img">
+                    </a>
+                    <p class="footer-tagline">A focused engineering studio building apps, blockchain, websites, games and bots that real businesses depend on.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/crystaltech777?igsh=ejUzYzQ1YW9md3Np" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@crystal_tech100?_t=ZM-8vMTZFrkdfy&amp;_r=1" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://x.com/Crystaltechnol" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+                        <a href="http://t.me/Crystal_tech01" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/16303868098" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:technologycrystals6@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services column -->
+                <div class="footer-col">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="app_development.html">App Development</a></li>
+                        <li><a href="blockchain_development.html">Blockchain Development</a></li>
+                        <li><a href="website_development.html">Website Development</a></li>
+                        <li><a href="game_development.html">Game Development</a></li>
+                        <li><a href="bot_development.html">Bot Development</a></li>
+                        <li><a href="call_system_setup.html">Call System Setup</a></li>
+                        <li><a href="decompile_decryption.html">Decompile &amp; Decryption</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company column -->
+                <div class="footer-col">
+                    <h5 class="footer-heading">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="technologies.html">Technologies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="refund_policy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Get in Touch column -->
+                <div class="footer-col">
+                    <h5 class="footer-heading">Get in Touch</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i><a href="mailto:technologycrystals6@gmail.com">technologycrystals6@gmail.com</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:crystaltech@crystaltechnologys.com">crystaltech@crystaltechnologys.com</a></li>
+                        <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/16303868098" target="_blank" rel="noopener">+1 630 386 8098</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i>San Francisco, USA<br><span class="footer-branch">Branch: Santiago de Compostela, Spain</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Crystal Tech. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="refund_policy.html">Refund Policy</a>
+                    <span>&middot;</span>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/16303868098" class="whatsapp-float" target="_blank" aria-label="WhatsApp Support">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">how can i help you</span>
+    </a>
+
+    <script src="js/request-project.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

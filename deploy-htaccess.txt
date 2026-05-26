@@ -1,0 +1,53 @@
+# Crystal Tech root .htaccess (deployed to public_html/.htaccess)
+# 1. Force HTTPS.
+# 2. Let /api/* fall through to api/index.php naturally.
+# 3. Send every other path to the React SPA's index.html.
+
+Options -MultiViews
+RewriteEngine On
+
+# Force HTTPS (uncomment after your SSL cert is provisioned)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Don't rewrite the API path — Apache will descend into /api/ on its own,
+# where api/.htaccess handles routing into api/index.php.
+RewriteRule ^api(/|$) - [L]
+
+# Don't rewrite real files / folders (assets, robots.txt, manifest.json, etc.)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# SPA fallback: everything else gets served the React shell.
+RewriteRule ^ index.html [L]
+
+# Gzip / Brotli compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# Long cache for hashed Vite assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css                  "access plus 1 year"
+    ExpiresByType application/javascript    "access plus 1 year"
+    ExpiresByType image/png                 "access plus 1 month"
+    ExpiresByType image/jpeg                "access plus 1 month"
+    ExpiresByType image/webp                "access plus 1 month"
+    ExpiresByType image/svg+xml             "access plus 1 month"
+    ExpiresByType font/woff2                "access plus 1 year"
+    ExpiresByType text/html                 "access plus 5 minutes"
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Block dotfiles
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

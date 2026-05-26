@@ -1,0 +1,3 @@
+# Deny direct access to anything in /backend/ outside /backend/public/.
+# Visitors should only hit /api/  (which maps to backend/public/ on deploy).
+Require all denied
